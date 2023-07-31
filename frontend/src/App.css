@@ -1,0 +1,136 @@
+:root{
+  --greenbg:#198754;
+}
+/* =======NavBar======= */
+.navbar{
+  background-color: var(--greenbg);
+}
+.banner{
+  color: var(--greenbg);
+}
+.bank-logo{
+  font-family: 'Emblema One', cursive;
+  text-decoration: none;
+  color: var(--greenbg);
+}
+.navText{
+  text-decoration: overline;
+  transition: all 2s;
+}
+.navText:hover{
+  color: var(--greenbg);
+  text-decoration:underline;
+}
+
+/* =======Body======= */
+footer{
+  margin-top: 160px;
+  width: 100%;
+  bottom: 0;
+  
+}
+.card-title{
+  padding: 5%;
+  color:whitesmoke;
+  background-color: var(--greenbg);
+  font-weight: 700;
+  border-radius: 10%;
+}
+.card:hover .card-img-overlay .card-title{
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+}
+.card:hover .card-img-overlay{
+  background-color: #075e546b;
+}
+.font-icon {
+  color: var(--greenbg);
+}
+.about{
+  color: var(--greenbg);
+}
+.points{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+  margin-left:20px ;
+  line-height: 120%;
+  color: black;
+}
+.securityInfo{
+  color: white;
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+  /* margin: 0% 38% 1% 38%; */
+  background-color: var(--greenbg);
+  animation: for 1.5s linear infinite;
+  border-radius: 4px;
+  padding: 4px;
+}
+.inp{
+  outline: solid 1px var(--greenbg);
+}
+@keyframes for {
+  50% {
+      opacity: 0.6;
+  }
+}
+.alerts{
+  margin-top: 20px;
+  border: 1px solid var(--greenbg);
+}
+.hint{
+  color: var(--greenbg);
+}
+
+.submit:hover{
+  color: #fff;
+  background-color: var(--greenbg);
+}
+.my-profile,.add-money,.withdraw-money,.history{
+  border-radius: 50% 10%;
+  height: 80px;
+  width: 80px;
+}
+.icons{
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 255, .2);
+  color: var(--greenbg);
+  padding: 20px;
+}
+.icon-border:hover{
+  box-shadow: 12px 12px 10px 1px rgba(0, 0, 255, .2);
+  transform: scale(1.03);
+}
+.head{
+  background-color: var(--greenbg);
+}
+/* =======User======= */
+.user-icons{
+  cursor: pointer;
+  text-decoration: none;
+}
+.user-form{
+  border-color: var(--greenbg);
+  /* outline: var(--greenbg) solid 10px; */
+}
+.back{
+  cursor: pointer;
+  color: var(--greenbg);
+}
+/* =======Footer======= */
+footer{
+  background-color: var(--greenbg);
+}
+.footer{
+  background-color: #0c5e37;
+  font-size: medium;
+}
+.footer-icon:hover{
+  color: aliceblue;
+}
+
+.required .form-label::after{
+  content:"*";
+  color:red;
+}

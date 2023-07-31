@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Rubik+Maze&display=swap&family=Diplomata+SC');
+
+  /* left  */
+  .card-png{
+    height: 40px;
+    opacity: 60%;
+  }
+  .chip-img{
+    filter: brightness(90%);
+    height: 60px;
+  }
+  .card-text{
+    font-size: 10px;
+  }
+  .brand{
+    height: 30px;
+    opacity: 50%;
+  }
+  .number{
+    color: #3c3a3a;
+    font-size: 25px;
+    font-family: 'Diplomata SC', cursive;  }
+  .card-name{
+    color: #3c3a3a;
+    font-family: 'Emblema One', cursive;
+  }
+  /* left end  */
+  
+  
+  .payment-info {
+    padding: 10px;
+    border-radius: 6px;
+    color: #423d3d;
+    font-weight: bold;
+  }
+  
+  .card-info{
+    /* box-shadow: 1px 1px 10px -3px #000; */
+    background-image: url("https://img.freepik.com/free-vector/realistic-white-monochrome-background_52683-65344.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 30px;
+    border-radius: 6px;
+    color: #000;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 5px 15px -2px rgba(0,0,0,0.42); 
+    box-shadow: 0px 5px 15px -2px rgba(0,0,0,0.42);
+    
+  }
+  
+  .p-about {
+    font-size: 12px;
+  }
+  .credit-card-label{
+    font-size: 11px;
+    font-weight: 500;
+  }
+  
+  .credit-inputs {
+    background: rgb(102,102,221);
+    color: #fff;
+    border-color: rgb(102,102,221);
+  }
+  
+  .credit-inputs::placeholder {
+    color: #fff;
+    font-size: 13px;
+  }
+  
+  .form-control.credit-inputs:focus {
+    background: rgb(102,102,221);
+    color: #fff;
+  }
+  
+  .line {
+    border-bottom: 1px solid rgb(102,102,221);
+  }
+  
+  .information span {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .information {
+    margin-bottom: 5px;
+  }
+
+  .dollar{
+    border-radius: 8px 0px 0px 8px;
+  }
+  .zeros{
+    border-radius: 0px 8px 8px 0px;
+  }
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.Emblema-font{
+  font-family: 'Emblema One', cursive;
+  opacity:40%;
+}
