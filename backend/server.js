@@ -4,7 +4,8 @@ const cors = require('cors')
 const UserRegister = require('./model/model')
 const middleware = require('./model/middleware')
 const jwt = require('jsonwebtoken')
-const generateToken = require('./model/generateTokekn')
+const generateToken = require('./model/generateToken')
+const path = require('path')
 // const collect = require('collect.js')
 const app = express()
 
@@ -15,6 +16,8 @@ mongoose.connect('mongodb+srv://login:login@cluster0.chn06lm.mongodb.net/').then
 app.use(express.json()) //instead of body parser
 
 app.use(cors({origin:'*'})) //to access data from any router
+
+
 
 app.post('/register', async (req, res)=>{
     try{
@@ -67,25 +70,7 @@ app.post('/login', async (req, res)=>{
         if(exist.password!==password) {
             return res.status(400).send('Invalid credentials')
         }
-        // let payload = {
-        //     user:{
-        //         id:exist.id
-        //     }
-        // }
-        // jwt.sign(payload, 'jwtSecure',{expiresIn:'30d'},
-        // (err, token) =>{
-        //     if (err) throw err;
-        //     return res.json({_id:exist._id,
-        //         username:exist.username,
-        //         email:exist.email,
-        //         account:exist.account,
-        //         token:generateToken(exit._id),
-        //         balance:exist.balance,
-        //         address:(exist.address?exist.address:null),
-        //         phone:(exist.phone?exist.phone:null),
-        //         city:(exist.city?exist.city:null)})
-        // }
-        // )
+
             return res.json({_id:exist._id,
                 username:exist.username,
                 email:exist.email,
