@@ -32,7 +32,7 @@ const Register = () =>{
         }else{
           setLoading(true)
           setError(false)
-       await axios.post('http://localhost:5001/register', data).then(
+       await axios.post('https://bankingapp-t070.onrender.com/register', data).then(
             res => {setUserEmail(res.data.email);
             localStorage.setItem('userData',JSON.stringify(res.data))
           dispatch(userLog(res.data))}

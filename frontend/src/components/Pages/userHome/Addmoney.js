@@ -31,7 +31,7 @@ const Addmoney = () => {
   console.log("id", id)
   const fetchBalance = async (inc, dec) => {
     try {
-      const res = await axios.put(`http://localhost:5001/getusers/${id}`, { //we have to send change to backend for handling error in UI
+      const res = await axios.put(`https://bankingapp-t070.onrender.com/getusers/${id}`, { //we have to send change to backend for handling error in UI
         'Balance': inc ? inc : null,
         'Draw_Balance': dec ? dec : null,
       });

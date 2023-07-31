@@ -24,7 +24,7 @@ const Login = () =>{
         e.preventDefault();
         setLoading(true)
         setError(false)
-       await axios.post('http://localhost:5001/login', data).then(
+       await axios.post('https://bankingapp-t070.onrender.com/login', data).then(
             res => {setToken(res.data.token);
             localStorage.setItem('userData',JSON.stringify(res.data))
           dispatch(userLog(res.data))}

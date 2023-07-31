@@ -26,7 +26,7 @@ const EditProfile = () => {
     }
     const UpdateProfile = async () => {
         try {
-          const res = await axios.put(`http://localhost:5001/updateprofile/${id}`,details
+          const res = await axios.put(`https://bankingapp-t070.onrender.com/updateprofile/${id}`,details
           );
           localStorage.setItem('userData', JSON.stringify(res.data))
           dispatch(addResult(res.data))

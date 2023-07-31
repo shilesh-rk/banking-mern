@@ -24,7 +24,7 @@ const Transfer = () => {
       try {
         setError(false)
         setLoading(true)
-        const response = await axios.get('http://localhost:5001/getreg');
+        const response = await axios.get('https://bankingapp-t070.onrender.com/getreg');
         setLoading(false)
         setAll(response.data);
       } catch (error) {
@@ -53,7 +53,7 @@ const Transfer = () => {
 
   const transferData = async () => {
     try {
-      const response = await axios.put(`http://localhost:5001/transfer/${user._id}`,{
+      const response = await axios.put(`https://bankingapp-t070.onrender.com/transfer/${user._id}`,{
         "toId": (toUser._id),
         "amount": parseInt(amount) })
         dispatch(addResult(response.data[0]))

@@ -19,7 +19,7 @@ const Accounts = () => {
     const fetchData = async () => {
       try {
         setLoading(true)
-        const response = await axios.get('http://localhost:5001/getreg');
+        const response = await axios.get('https://bankingapp-t070.onrender.com/getreg');
         setAll(response.data);
       } catch (error) {
         setLoading(false)
