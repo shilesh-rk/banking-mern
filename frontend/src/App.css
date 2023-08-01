@@ -1,38 +1,37 @@
 :root{
-  --greenbg:#198754;
+  --greenBg:#198754;
 }
 /* =======NavBar======= */
 .navbar{
-  background-color: var(--greenbg);
+  background-color: var(--greenBg);
 }
 .banner{
-  color: var(--greenbg);
+  color: var(--greenBg);
 }
 .bank-logo{
   font-family: 'Emblema One', cursive;
   text-decoration: none;
-  color: var(--greenbg);
+  color: var(--greenBg);
 }
 .navText{
   text-decoration: overline;
   transition: all 2s;
 }
 .navText:hover{
-  color: var(--greenbg);
+  color: var(--greenBg);
   text-decoration:underline;
 }
 
 /* =======Body======= */
 footer{
-  margin-top: 160px;
-  width: 100%;
-  bottom: 0;
+  margin-top: 10px;
+  height: 100%;
   
 }
 .card-title{
   padding: 5%;
   color:whitesmoke;
-  background-color: var(--greenbg);
+  background-color: var(--greenBg);
   font-weight: 700;
   border-radius: 10%;
 }
@@ -45,15 +44,16 @@ footer{
   background-color: #075e546b;
 }
 .font-icon {
-  color: var(--greenbg);
+  color: var(--greenBg);
+  padding: 10px;
 }
 .about{
-  color: var(--greenbg);
+  color: var(--greenBg);
 }
 .points{
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-weight: 100;
-  margin-left:20px ;
+  margin-left:15px ;
   line-height: 120%;
   color: black;
 }
@@ -63,13 +63,13 @@ footer{
   text-align: center;
   margin: 0 auto;
   /* margin: 0% 38% 1% 38%; */
-  background-color: var(--greenbg);
+  background-color: var(--greenBg);
   animation: for 1.5s linear infinite;
   border-radius: 4px;
   padding: 4px;
 }
 .inp{
-  outline: solid 1px var(--greenbg);
+  outline: solid 1px var(--greenBg);
 }
 @keyframes for {
   50% {
@@ -78,32 +78,22 @@ footer{
 }
 .alerts{
   margin-top: 20px;
-  border: 1px solid var(--greenbg);
+  border: 1px solid var(--greenBg);
 }
 .hint{
-  color: var(--greenbg);
+  color: var(--greenBg);
 }
 
 .submit:hover{
   color: #fff;
-  background-color: var(--greenbg);
+  background-color: var(--greenBg);
 }
-.my-profile,.add-money,.withdraw-money,.history{
+.my-profile,.add-money,.transfer-money,.history{
   border-radius: 50% 10%;
-  height: 80px;
-  width: 80px;
 }
-.icons{
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 255, .2);
-  color: var(--greenbg);
-  padding: 20px;
-}
-.icon-border:hover{
-  box-shadow: 12px 12px 10px 1px rgba(0, 0, 255, .2);
-  transform: scale(1.03);
-}
+
 .head{
-  background-color: var(--greenbg);
+  background-color: var(--greenBg);
 }
 /* =======User======= */
 .user-icons{
@@ -111,16 +101,16 @@ footer{
   text-decoration: none;
 }
 .user-form{
-  border-color: var(--greenbg);
-  /* outline: var(--greenbg) solid 10px; */
+  border-color: var(--greenBg);
+  /* outline: var(--greenBg) solid 10px; */
 }
 .back{
   cursor: pointer;
-  color: var(--greenbg);
+  color: var(--greenBg);
 }
 /* =======Footer======= */
 footer{
-  background-color: var(--greenbg);
+  background-color: var(--greenBg);
 }
 .footer{
   background-color: #0c5e37;
@@ -133,4 +123,54 @@ footer{
 .required .form-label::after{
   content:"*";
   color:red;
+}
+
+
+
+.new-top{
+  display: flex;
+  justify-content: center;
+  margin: 3% 10%;
+  text-align: center;
+}
+.new{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  width: 550px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 255, .2) ;
+  padding: 2%;
+}
+.new-bord{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 23%;
+  /* padding: 10px; */
+  font-weight: bold;
+  margin: 10px 0px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 255, .2) ;
+  /* border: 1px solid black; */
+  border-radius: 10%;}
+.new-bord:hover,.new-bord:active{
+  transform: scale(0.99);
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+@media screen and (max-width: 767px) {
+  .new{
+    display: grid;
+    text-align: center;
+    /* padding: 20px; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10px;
+  }
+  .new-bord{
+    width: 90%;
+    margin:0px 5%;
+  }
 }

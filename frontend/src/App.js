@@ -18,6 +18,7 @@ function App() {
   return (
     <>
       <Navbar />
+
       <Routes>
         <Route path="/" element={ <Dashboard /> } />
         <Route path='/about' element={ <About /> } />
@@ -27,11 +28,12 @@ function App() {
         <Route path='/register' element={ <Register /> } />
         <Route path='/userprofile' element={ <UserProfile /> } />
 
-          <Route path='/addmoney/:id' element={<Addmoney /> } />
-          <Route path='/transfer' element={ <Transfer /> } />
-          <Route path='/allaccounts' element={ <Accounts /> } />
-          <Route path='/editprofile' element={ <EditProfile /> } />
+        <Route path='/addmoney/:id' element={ <Addmoney /> } />
+        <Route path='/transfer' element={ <Transfer /> } />
+        <Route path='/allaccounts' element={ <Accounts /> } />
+        <Route path='/editprofile' element={ <EditProfile /> } />
       </Routes>
+
       <Footer />
     </>
   );

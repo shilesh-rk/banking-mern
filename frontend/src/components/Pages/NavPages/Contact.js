@@ -18,23 +18,23 @@ const Contact = () => {
                         <form >
                             <div class="mb-3">
                                 <label for="exampleForm" class="form-label">Full Name</label>
-                                <input type="text" class="form-control border-success" id="exampleForm" placeholder="John Smith"/>
-</div>
+                                <input type="text" class="form-control border-success" id="exampleForm" placeholder="John Smith" />
+                            </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                <input type="email" class="form-control border-success" id="exampleFormControlInput1" placeholder="name@example.com"/>
-</div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                                    <textarea class="form-control border-success" id="exampleFormControlTextarea1" rows="5"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-outline-success">Send Message</button>
+                                <input type="email" class="form-control border-success" id="exampleFormControlInput1" placeholder="name@example.com" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                <textarea class="form-control border-success" id="exampleFormControlTextarea1" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-success">Send Message</button>
                         </form>
-                    </div>
                     </div>
                 </div>
             </div>
-            )
+        </div>
+    )
 }
 
-            export default Contact
+export default Contact

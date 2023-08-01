@@ -10,18 +10,18 @@ import './profile.css'
 const Addmoney = () => {
   const user = useSelector(state => state.userReducer.userLogin.userData)
   const navigate = useNavigate();
-  useEffect(()=>{
+  useEffect(() => {
 
-    if(!user){
+    if (!user) {
       navigate('/login')
-  }
-  },[user, navigate])
+    }
+  }, [ user, navigate ])
   console.log(user);
   const [ change, setChange ] = useState(0);
   const [ password, setPassword ] = useState()
 
-  const [loading, setLoading] = useState()
-  const [errorMsg, setError] = useState()
+  const [ loading, setLoading ] = useState()
+  const [ errorMsg, setError ] = useState()
 
   const dispatch = useDispatch();
   const { id } = useParams()
@@ -38,13 +38,11 @@ const Addmoney = () => {
       dispatch(addResult(res.data))
       localStorage.setItem('userData', JSON.stringify(res.data))
       console.log("Updated balance:", res.data.balance);
-      
+
     } catch (error) {
       console.error("Error fetching balance:", error);
     }
   };
-  // console.log("token",user?.token);
-
   const addM = async (e) => {
     e.preventDefault();
     if (change) {
@@ -62,10 +60,10 @@ const Addmoney = () => {
 
   const drawM = async (e) => {
     e.preventDefault();
-    if(change){
+    if (change) {
       setLoading(true)
       setError(false)
-      if (change<=user.balance) {
+      if (change <= user.balance) {
         await fetchBalance(null, change);
         setLoading(false)
         setChange(0)
@@ -73,17 +71,17 @@ const Addmoney = () => {
         setLoading(false)
         setError("Insufficient Balance")
       }
-    } else{
+    } else {
       setError("Please Enter the correct Amount")
     }
   };
   return (
-    <div>
-   <div className='container'>   
-    {errorMsg  && <Error message = {errorMsg}/>}
-    </div>
-    {loading && <Loading />}
-    { user? <div className="container mt-5 d-flex justify-content-center">
+    <div className='py-5'>
+      <div className='container'>
+        { errorMsg && <Error message={ errorMsg } /> }
+      </div>
+      { loading && <Loading /> }
+      { user ? <div className="container mt-5 d-flex justify-content-center">
         <div className="row">
           <div className="col-md-7">
             <p className='text-success fw-2' role='button' onClick={ back }><i className="fa fa-long-arrow-left mr-1 mb-1"></i> Back</p>
@@ -133,8 +131,8 @@ const Addmoney = () => {
               <button className="btn btn-success btn-block d-flex justify-content-between mt-3 w-100" type="button" onClick={ addM }><span>Add</span><span>${ change ? change : 0 } <i className="fa fa-long-arrow-right ml-1"></i></span></button></div>
           </div>
         </div>
-      </div>:null}
-      
+      </div> : null }
+
     </div>
   )
 }

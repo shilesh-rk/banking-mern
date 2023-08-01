@@ -84,8 +84,8 @@ const Transfer = () => {
   }
 
   return (
-    <div className='container'>
-      <div className='row mt-5 px-5 d-flex justify-content-between'>
+    <div className='container mb-3'>
+      <div className='row mt-3 px-5 d-flex justify-content-between'>
         <p className='text-success fw-2 mt-5' role='button' onClick={ back }><i className="fa fa-long-arrow-left mr-1 mb-1"></i> Back</p>
         <div className='container'>   
           {errorMsg  && <Error message = {errorMsg}/>}</div>
