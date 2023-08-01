@@ -18,7 +18,6 @@ function App() {
   return (
     <>
       <Navbar />
-
       <Routes>
         <Route path="/" element={ <Dashboard /> } />
         <Route path='/about' element={ <About /> } />
@@ -33,7 +32,6 @@ function App() {
         <Route path='/allaccounts' element={ <Accounts /> } />
         <Route path='/editprofile' element={ <EditProfile /> } />
       </Routes>
-
       <Footer />
     </>
   );

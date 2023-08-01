@@ -41,38 +41,32 @@ const Login = () => {
     }
   }, [ navigate, token ])
   return (
-    <div className='d-flex justify-content-center my-5'>
-      <div className="card text-center w-50 mt-5 mb-5">
-        <div className="card-header  fs-4 fw-bold text-white head">
-          Login
-        </div>
-        <div className='container'>
-          { errorMsg && <Error message={ errorMsg } /> }</div>
-        { loading && <Loading /> }
-        <div className="card-body">
-          <form autoComplete="off" onSubmit={ submitHandler }>
-            <div className="form-group was-validated">
-              <label className="form-label" htmlFor="email">Your Email:</label>
-              <input className='form-control' type="email" onChange={ changeHandler } name='email' placeholder='Email' />
-              <div className="invalid-feedback">
-                Please enter your email address
+    <>
+      <div className='container'>
+        { errorMsg && <Error message={ errorMsg } /> }</div>
+      { loading && <Loading /> }
+      <div className='d-flex justify-content-center m-5'>
+        <div className="card text-center mt-5 mb-5">
+          <div className="card-header  fs-4 fw-bold text-white head">
+            Login
+          </div>
+          <div className="card-body">
+            <form autoComplete="off" onSubmit={ submitHandler }>
+              <div className="form-group was-validated required">
+                <div className="form-floating p-1"><input type="email" className="form-control border-success" onChange={ changeHandler } name='email' placeholder='Email' /><label htmlFor="floatingInput">Email</label></div>
               </div>
-            </div>
-            <div className="form-group was-validated">
-              <label className="form-label" htmlFor="">Your Password:</label>
-              <input className='form-control' type="password" onChange={ changeHandler } name='password' placeholder='Password' />
-              <div className="invalid-feedback">
-                Please enter your password
+              <div className="form-group was-validated required">
+                <div className="form-floating p-1"><input type="password" className="form-control border-success" onChange={ changeHandler } name='password' placeholder='Password' /><label htmlFor="floatingInput">Password</label></div>
               </div>
-            </div>
-            <button className="btn w-50 mx-auto rounded-3 btn-outline-success mt-3 d-flex justify-content-center" type="submit">Login</button>
-          </form>
-        </div>
-        <div className="card-footer text-muted">
-          Not have an Account ? <Link to='/register' className='text-success'>Click here</Link>
+              <button className="btn w-50 mx-auto rounded-3 btn-outline-success mt-3 d-flex justify-content-center" type="submit">Login</button>
+            </form>
+          </div>
+          <div className="card-footer text-muted">
+            Not have an Account ? <Link to='/register' className='text-success'>Click here</Link>
+          </div>
         </div>
       </div>
-    </div>
+    </>
 
   )
 }

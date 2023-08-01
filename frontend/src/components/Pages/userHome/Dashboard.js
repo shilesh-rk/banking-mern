@@ -18,7 +18,7 @@ const Dashboard = () => {
               />
             </div>
             <div className='col-md-6 mt-5'>
-              <h3 className='text-center about fw-bold'>We are Providing</h3>
+              <h3 className='text-center text-success fw-bold'>We are Providing</h3>
               <p className='text-center'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quos
                 quo voluptates molestias eaque, asperiores non error laborum nulla
@@ -59,29 +59,28 @@ const Dashboard = () => {
         </div>:null} */}
 
           <div>
-            {/* new  */ }
+            
             { user ?
-              <div className='new-top'>
-                <div className='new container'>
-                  <Link to="/userProfile" className='new-bord text-success text-decoration-none'>
+              <div className='log-main'>
+                <div className='log-container container'>
+                  <Link to="/userProfile" className='log-options text-success text-decoration-none'>
                     <i className="fa-solid font-icon fa-user fs-1"></i>
                     <p className=''>my profile</p>
                   </Link>
-                  <Link to={ `/addmoney/${user._id}` } className='new-bord text-success text-decoration-none'>
+                  <Link to={ `/addmoney/${user._id}` } className='log-options text-success text-decoration-none'>
                     <i className="fa-solid font-icon fa-wallet fs-1"></i>
                     <p className=''>Add Money</p>
                   </Link>
-                  <Link to="/transfer" className='new-bord text-success text-decoration-none'>
+                  <Link to="/transfer" className='log-options text-success text-decoration-none'>
                     <i className="fa-solid font-icon fa-money-bill-transfer fs-1"></i>
                     <p className=''>Transfer Money</p>
                   </Link>
-                  <Link to="/allaccounts" className='new-bord text-success text-decoration-none'>
+                  <Link to="/allaccounts" className='log-options text-success text-decoration-none'>
                     <i className="fa-solid font-icon fa-users fs-1"></i>
                     <p className=''>All Accounts</p>
                   </Link>
                 </div>
               </div> : null }
-            {/* end  */ }
 
             <h3 className="securityInfo ">For Your Own Security</h3>
             <div className='container alerts'>

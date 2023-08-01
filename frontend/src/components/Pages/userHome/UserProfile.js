@@ -33,22 +33,21 @@ const UserProfile = () => {
                                     <h6 className="text-right back" data-bs-toggle="modal" data-bs-target="#login">Edit &nbsp;<i className="fa-solid fa-user-pen"></i></h6>
                                 </div>
                                 <div className="row mt-2">
-                                    <div className="col-md-6 form-floating p-1"><input type="button" className="form-control user-form border-success text-start pe-none user-select-auto" aria-disabled="true" value={ name[ 0 ] } placeholder="" /><label htmlFor="floatingInput">First Name</label></div>
-                                    <div className="col-md-6 form-floating p-1"><input type="button" className="form-control user-form border-success text-start pe-none user-select-auto" value={ name[ 1 ] } placeholder="" /><label htmlFor="floatingInput">Last Name</label></div>
+                                    <div className="col-md-6 form-floating p-1"><input type="button" className="form-control border-success text-start pe-none user-select-auto" aria-disabled="true" value={ name[ 0 ] } placeholder="" /><label htmlFor="floatingInput">First Name</label></div>
+                                    <div className="col-md-6 form-floating p-1"><input type="button" className="form-control border-success text-start pe-none user-select-auto" value={ name[ 1 ] } placeholder="" /><label htmlFor="floatingInput">Last Name</label></div>
                                 </div>
                                 <div className="row mt-3">
-                                    <div className="col-md-6 form-floating p-1"><input type="button" className="form-control user-form border-success text-start pe-none user-select-auto" placeholder="email" value={ user.email } /><label htmlFor="floatingInput">Email Address</label></div>
-                                    <div className="col-md-6 form-floating p-1"><input type="button" className="form-control user-form border-success text-start pe-none user-select-auto" value={ user.phone } placeholder="Phone number" /><label htmlFor="floatingInput">Phone Number</label></div>
+                                    <div className="col-md-6 form-floating p-1"><input type="button" className="form-control border-success text-start pe-none user-select-auto" placeholder="email" value={ user.email } /><label htmlFor="floatingInput">Email Address</label></div>
+                                    <div className="col-md-6 form-floating p-1"><input type="button" className="form-control border-success text-start pe-none user-select-auto" value={ user.phone } placeholder="Phone number" /><label htmlFor="floatingInput">Phone Number</label></div>
                                 </div>
                                 <div className="row mt-3">
-                                    <div className="col-md-6 form-floating p-1"><input type="button" className="form-control user-form border-success text-start pe-none user-select-auto" placeholder="Account Number" value={ user.account } /><label htmlFor="floatingInput">Account Number</label></div>
-                                    <div className="col-md-6 form-floating p-1"><input type="button" className="form-control user-form border-success text-start pe-none user-select-auto" value={ `$ ${user.balance}` } placeholder="Account Balance" /><label htmlFor="floatingInput">Balance</label></div>
+                                    <div className="col-md-6 form-floating p-1"><input type="button" className="form-control border-success text-start pe-none user-select-auto" placeholder="Account Number" value={ user.account } /><label htmlFor="floatingInput">Account Number</label></div>
+                                    <div className="col-md-6 form-floating p-1"><input type="button" className="form-control border-success text-start pe-none user-select-auto" value={ `$ ${user.balance}` } placeholder="Account Balance" /><label htmlFor="floatingInput">Balance</label></div>
                                 </div>
                                 <div className="row mt-3">
-                                    <div className="col-md-6 form-floating p-1"><input type="button" className="form-control user-form border-success text-start pe-none user-select-auto" placeholder="address" value={ user.address } /><label htmlFor="floatingInput">Address</label></div>
-                                    <div className="col-md-6 form-floating p-1"><input type="button" className="form-control user-form border-success text-start pe-none user-select-auto" value={ user.city } placeholder="City" /><label htmlFor="floatingInput">City</label></div>
+                                    <div className="col-md-6 form-floating p-1"><input type="button" className="form-control border-success text-start pe-none user-select-auto" placeholder="address" value={ user.address } /><label htmlFor="floatingInput">Address</label></div>
+                                    <div className="col-md-6 form-floating p-1"><input type="button" className="form-control border-success text-start pe-none user-select-auto" value={ user.city } placeholder="City" /><label htmlFor="floatingInput">City</label></div>
                                 </div>
-                                {/* <div className="mt-5 text-right"><button className="btn btn-outline-success" type="button">Save Profile</button></div> */ }
                             </div>
                         </div>
                     </div> : null }

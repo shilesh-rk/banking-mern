@@ -27,7 +27,7 @@ export default function Service() {
 
       <div class="row mx-5 p-5 text-center">
         <div class="col-sm-3 mb-3">
-          <div class="card text-bg-dark">
+          <div class="card text-bg-dark border-success">
             <img src="https://4.imimg.com/data4/SI/OT/GLADMIN-9510865/scroll2-500x500.jpg" style={ { height: "300px" } } class="card-img" alt="..." />
             <div class="card-img-overlay d-flex justify-content-center align-items-center">
               <h5 class="card-title">Education Loan</h5>
@@ -35,7 +35,7 @@ export default function Service() {
           </div>
         </div>
         <div class="col-sm-3 mb-3">
-          <div class="card text-bg-dark">
+          <div class="card text-bg-dark border-success">
             <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2018/01/12/641178-homeloan-thinkstock-011218.jpg" style={ { height: "300px" } } class="card-img" alt="..." />
             <div class="card-img-overlay d-flex justify-content-center align-items-center">
               <h5 class="card-title">Home Loan</h5>
@@ -43,7 +43,7 @@ export default function Service() {
           </div>
         </div>
         <div class="col-sm-3 mb-3">
-          <div class="card text-bg-dark">
+          <div class="card text-bg-dark border-success">
             <img src="https://cdn.dnaindia.com/sites/default/files/2021/02/21/959404-car-loan.jpg" style={ { height: "300px" } } class="card-img" alt="..." />
             <div class="card-img-overlay d-flex justify-content-center align-items-center">
               <h5 class="card-title">Car Loan</h5>
@@ -51,7 +51,7 @@ export default function Service() {
           </div>
         </div>
         <div class="col-sm-3 mb-3">
-          <div class="card text-bg-dark">
+          <div class="card text-bg-dark border-success">
             <img src="https://tse4.mm.bing.net/th?id=OIP.MiDSSE4MAFK8pRhpdExPwQHaEB&pid=ImgDet&rs=1" style={ { height: "300px" } } class="card-img" alt="..." />
             <div class="card-img-overlay d-flex justify-content-center align-items-center">
               <h5 class="card-title">Personal Loan</h5>

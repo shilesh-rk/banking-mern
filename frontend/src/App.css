@@ -23,11 +23,8 @@
 }
 
 /* =======Body======= */
-footer{
-  margin-top: 10px;
-  height: 100%;
-  
-}
+
+
 .card-title{
   padding: 5%;
   color:whitesmoke;
@@ -47,9 +44,6 @@ footer{
   color: var(--greenBg);
   padding: 10px;
 }
-.about{
-  color: var(--greenBg);
-}
 .points{
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-weight: 100;
@@ -62,7 +56,6 @@ footer{
   width: fit-content;
   text-align: center;
   margin: 0 auto;
-  /* margin: 0% 38% 1% 38%; */
   background-color: var(--greenBg);
   animation: for 1.5s linear infinite;
   border-radius: 4px;
@@ -80,29 +73,10 @@ footer{
   margin-top: 20px;
   border: 1px solid var(--greenBg);
 }
-.hint{
-  color: var(--greenBg);
-}
-
-.submit:hover{
-  color: #fff;
-  background-color: var(--greenBg);
-}
-.my-profile,.add-money,.transfer-money,.history{
-  border-radius: 50% 10%;
-}
-
-.head{
-  background-color: var(--greenBg);
-}
 /* =======User======= */
 .user-icons{
   cursor: pointer;
   text-decoration: none;
-}
-.user-form{
-  border-color: var(--greenBg);
-  /* outline: var(--greenBg) solid 10px; */
 }
 .back{
   cursor: pointer;
@@ -117,23 +91,16 @@ footer{
   font-size: medium;
 }
 .footer-icon:hover{
-  color: aliceblue;
+  color: whitesmoke;
 }
 
-.required .form-label::after{
-  content:"*";
-  color:red;
-}
-
-
-
-.new-top{
+.log-main{
   display: flex;
   justify-content: center;
   margin: 3% 10%;
   text-align: center;
 }
-.new{
+.log-container{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -142,7 +109,7 @@ footer{
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 255, .2) ;
   padding: 2%;
 }
-.new-bord{
+.log-options{
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -150,27 +117,36 @@ footer{
   justify-content: center;
   text-align: center;
   width: 23%;
-  /* padding: 10px; */
   font-weight: bold;
   margin: 10px 0px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 255, .2) ;
-  /* border: 1px solid black; */
   border-radius: 10%;}
-.new-bord:hover,.new-bord:active{
+.log-options:hover,.log-options:active{
   transform: scale(0.99);
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 @media screen and (max-width: 767px) {
-  .new{
+  .log-container{
     display: grid;
     text-align: center;
     /* padding: 20px; */
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 10px;
   }
-  .new-bord{
+  .log-options{
     width: 90%;
     margin:0px 5%;
   }
+}
+
+.popups{
+position: absolute;
+top: 15%;
+bottom: 100;
+margin: 0 auto;
+left: 0;
+right: 0;
+z-index: 1;
+width: 300px;
 }

@@ -42,13 +42,13 @@ const EditProfile = () => {
     return (
         <div>
             <div className="modal fade " id="login" tabIndex="-1" aria-hidden="true">
+                            <div className='container'>
+                                { errorMsg && <Error message={ errorMsg } /> }</div>
+                            { loading && <Loading /> }
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <button type="button" className="btn-close m-2" data-bs-dismiss="modal" aria-label="Close"></button>
                         <div className="modal-body">
-                            <div className='container'>
-                                { errorMsg && <Error message={ errorMsg } /> }</div>
-                            { loading && <Loading /> }
                             <div className="card shadow">
                                 <div className="profile-thumbnail mx-auto">
                                     <img src="https://img.freepik.com/premium-vector/young-smiling-man-avatar-man-with-brown-beard-mustache-hair-wearing-yellow-sweater-sweatshirt-3d-vector-people-character-illustration-cartoon-minimal-style_365941-860.jpg?w=740" className="card-img-top rounded-circle border-0" alt="Jose Portrait" height="120px" />

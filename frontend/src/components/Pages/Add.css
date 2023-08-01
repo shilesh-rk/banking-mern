@@ -31,16 +31,12 @@ html {
   width: 500px;
   height: 300px;
   padding: 12px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   border-radius: 16px;
   border: solid 4px rgba(255, 255, 255, 0.1);
-
   background-image: url("https://t4.ftcdn.net/jpg/05/37/15/09/360_F_537150961_VZG4XAlRfOgOtnOlehSyn6ODtKAR5SMz.jpg");
-  /* background-color: #075E54; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -83,7 +79,6 @@ section {
 
 .brand {
   height: 50px;
-  /* mix-blend-mode:hard-light; */
 }
 
 .infos {
